@@ -1,0 +1,113 @@
+/* General styling for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for the home page with background image */
+.home-page {
+    background-image: url("../images/homebackground.png");
+    background-size: cover;
+    height: 100vh; /* Make the background cover the entire viewport height */
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-page h1, .home-page p {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    padding: 1em;
+    border-radius: 8px;
+    text-align: center;
+}
+header {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the nav */
+    padding: 1em 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2); /* Hover effect for links */
+}
+
+/* Main content styling */
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5em 1em; /* Add padding to ensure content is not hidden behind the nav */
+}
+
+main h1, main p {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    padding: 1em;
+    border-radius: 8px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for footer */
+    color: white;
+    width:100%;
+}
+/* Existing styles */
+
+/* Add these styles for responsiveness */
+
+/* Styles for smaller screens */
+@media (max-width: 768px) {
+    header nav ul {
+        display: none; /* Hide the default menu */
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .menu-toggle {
+        display: block; /* Show the menu toggle button */
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    header nav ul.open {
+        display: flex; /* Show the menu when toggled */
+    }
+}
+
+
