@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/eventstyle.css">
+    <title>Events</title>
+</head>
+<body>
+    <header>
+        <button class="menu-toggle">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="discussion.html">Discussions</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="events-section">
+        <h2>Upcoming Events</h2>
+        <ul id="events-list"></ul>
+        <button class="create-event-button" onclick="window.location.href='create-event.html'">Create an Event</button>
+    </main>
+    <footer>
+        <p>&copy; 2023 Climate Action Campaign</p>
+    </footer>
+
+    <!-- Modal for Event Details -->
+    <div class="modal-background" id="modal-background">
+        <div class="event-details-modal" id="event-details-modal">
+            <span class="close-modal" id="close-modal">&times;</span>
+            <h3 id="event-modal-name"></h3>
+            <p id="event-modal-description"></p>
+            <p id="event-modal-location"></p>
+            <p id="event-modal-date"></p>
+            <p id="event-modal-time"></p>
+            <p id="event-modal-link"></p>
+        </div>
+    </div>
+    <!-- Firebase and App Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="css/js/events.js"></script>
+</body>
+</html>
