@@ -1,0 +1,96 @@
+/* General styles */
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header and footer styles */
+header {
+    background-color: #4CAF50;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
+
+/* About page styles */
+.about-section {
+    background-color: #d0f0c0; /* Light green background */
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+    flex: 1; /* Take up available space */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+}
+
+.about-section h2 {
+    font-size: 2em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    max-width: 600px;
+    text-align: justify; /* Justified alignment */
+    text-align-last: center; /* Center last line */
+    margin: 0 20px; /* Ensure some padding on the sides */
+}
+
+/* Styles for smaller screens */
+@media (max-width: 768px) {
+    header nav ul {
+        display: none; /* Hide the default menu */
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .menu-toggle {
+        display: block; /* Show the menu toggle button */
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    header nav ul.open {
+        display: flex; /* Show the menu when toggled */
+    }
+}
