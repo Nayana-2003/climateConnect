@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Climate Campaign - Home</title>
+</head>
+<body class="home-page">
+    <header>
+        <button class="menu-toggle">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to Climate Connect</h1>
+        <p>Connect, share, and act on climate change—join the movement with 'Climate Connect'!</p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Climate Campaign</p>
+    </footer>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('header nav ul');
+    
+        menuToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('open');
+        });
+    });
+    </script>
+</body>
+</html>
