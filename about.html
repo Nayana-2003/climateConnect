@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aboutstyle.css">
+    <title>About</title>
+</head>
+<body>
+    <header>
+        <button class="menu-toggle">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="about-section">
+        <h2>About Our Site</h2>
+        <div class="about-content">
+            <p>
+                Climate Connect is a dynamic platform designed to empower individuals and communities to take action on climate change, aligning with Sustainable Development Goal 13: Climate Action. Our mission is to create a vibrant online space where people can share events, opinions, and volunteer opportunities related to environmental sustainability.
+            </p>
+            <p>
+                Whether you're organizing a local clean-up, advocating for renewable energy, or looking to volunteer with eco-friendly initiatives, Climate Connect is your hub for all climate actions. We believe that by connecting like-minded individuals, we can inspire meaningful change and build a more sustainable future together.
+            </p>
+            <p>
+                Join us in making a difference—share your events, express your thoughts, and discover new ways to contribute to a greener world. At Climate Connect, every voice matters, and every action counts. Let's unite for the planet!
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Climate Connect</p>
+    </footer>
+    <script>document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('header nav ul');
+    
+        menuToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('open');
+        });
+    });
+    </script>
+</body>
+</html>
