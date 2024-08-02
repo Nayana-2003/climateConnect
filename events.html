@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate Connect - Events</title>
+    <link rel="stylesheet" href="eventstyle.css">
+</head>
+<body>
+    <header>
+        <button class="menu-toggle">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="events-section">
+        <h2>Upcoming Events</h2>
+        <ul id="events-list"></ul>
+        <button class="create-event-button" onclick="window.location.href='create-event.html'">Create an Event</button>
+    </main>
+
+    <footer>
+        <p>© 2024 Climate Connect. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal for Event Details -->
+    <div id="modal-background" class="modal-background"></div>
+    <div id="event-details-modal" class="event-details-modal">
+        <span id="close-modal" class="close-modal">&times;</span>
+        <h3 id="event-modal-name">Event Name</h3>
+        <p id="event-modal-description">Event Description</p>
+        <p id="event-modal-location">Location: <span id="event-location"></span></p>
+        <p id="event-modal-date">Date: <span id="event-date"></span></p>
+        <p id="event-modal-time">Time: <span id="event-time"></span></p>
+        <p id="event-modal-link">Link: <span id="event-link"></span></p>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.21.0/firebase-firestore-compat.js"></script>
+    <script src="events.js"></script>
+</body>
+</html>
